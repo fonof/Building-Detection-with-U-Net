@@ -108,10 +108,11 @@ python src/final_inference.py \
 
 ### Валидация после обучения (эпоха 50)
 
-| Image | Ground Truth | Prediction |
-|:-----:|:------------:|:----------:|
-| ![Val 0](output/val_epoch_050/sample_00.png) | — | — |
-| ![Val 4](output/val_epoch_050/sample_04.png) | — | — |
+Каждый снимок: **Image → Ground Truth → Prediction** (слева направо).
+
+![Val sample 0](output/val_epoch_050/sample_00.png)
+
+![Val sample 4](output/val_epoch_050/sample_04.png)
 
 ## 🏗️ Архитектура
 
