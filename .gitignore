@@ -8,10 +8,6 @@ __pycache__/
 # Данные и архивы (скачиваются отдельно)
 data/
 
-# Веса модели (~97 MB — обучается локально)
-models/*.pth
-!models/.gitkeep
-
 # TensorBoard
 runs/
 

@@ -34,6 +34,10 @@
 git clone https://github.com/fonof/Building-Detection-with-U-Net.git
 cd Building-Detection-with-U-Net
 
+# Веса модели (~93 MB) хранятся в Git LFS
+git lfs install
+git lfs pull
+
 python -m venv venv
 source venv/bin/activate        # Linux / macOS
 # venv\Scripts\activate         # Windows (PowerShell / CMD)
@@ -43,7 +47,7 @@ pip install -r requirements.txt
 ```
 
 > **Данные:** скачайте Inria dataset и подготовьте патчи (см. раздел «Подготовка данных»).  
-> **Веса модели** не включены в репозиторий — обучите локально или положите `models/inria_10k_best.pth` после обучения.
+> **Веса модели** уже в репозитории: `models/inria_10k_best.pth` (Val IoU 0.7732, через Git LFS).
 
 ## 🚀 Использование
 
