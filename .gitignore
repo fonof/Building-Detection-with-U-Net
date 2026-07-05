@@ -1,0 +1,24 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.DS_Store
+
+# Данные и архивы (скачиваются отдельно)
+data/
+
+# Веса модели (~97 MB — обучается локально)
+models/*.pth
+!models/.gitkeep
+
+# TensorBoard
+runs/
+
+# Val-снимки всех эпох, кроме финальной (для README)
+output/val_epoch_*/
+!output/val_epoch_050/
+
+# Portfolio и val_epoch_050 — в репозитории для README
+!output/portfolio/
+!output/.gitkeep
